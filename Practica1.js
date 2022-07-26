@@ -1,7 +1,7 @@
 class Usuario {
   constructor(nombre, apellido) {
     
-      this.nombre = nombre;
+    this.nombre = nombre;
     this.apellido = apellido;
     this.libros = [];
     this.mascotas = [];
@@ -19,19 +19,13 @@ class Usuario {
   addBook(nombre,autor){
     this.libros.push({Nombre:nombre, Autor: autor});
     
-   
   }
   getBookNames(){
 
-   let nom=this.libros.map(function(current){
-     return (current.Nombre);
-
-   })
+   return this.libros.map((x)=>x.Nombre);
   }
 
-
 }
-
 
 const usuario = new Usuario(`Lucas`, "De Armas");
 usuario.getFullName();
