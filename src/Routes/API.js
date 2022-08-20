@@ -76,16 +76,16 @@ router.put('/:id',(req,res)=>{
         productos[ProduID]=req.body;
     
     
-        res.json(productos);
+        
     
 
-    // const ingreso= {
-    //     "title": req.body.nombre,
-    //     "price": req.body.price,
-    //     "thumbnail": req.body.thumbnail,
-    //  }
-    //productos[ProduID]= ingreso;
-    // 
+    const ingreso= {
+        "title": req.body.nombre,
+        "price": req.body.price,
+        "thumbnail": req.body.thumbnail,
+     }
+    productos[ProduID]= ingreso;
+    
 }
     
    
